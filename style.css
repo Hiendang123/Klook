@@ -1,0 +1,741 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: 70px;
+  margin-left: 5px;
+}
+
+.logo {
+  max-width: 100%;
+  margin: 0 60px 0;
+  display: flex;
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 300px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+  border: 1px solid #3333;
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+.search {
+  margin: 15px 0 0 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  padding: 25px 25px;
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12 px;
+}
+
+ul li a .logo {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  margin-right: 10px; /* Space between the image and the text */
+}
+
+ul li ul.dropdown-content li {
+  display: block;
+}
+
+ul li ul.dropdown-content {
+  width: 100%;
+  color: #333333;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  top: 100%; /* Adjusts the position below the main item */
+  left: 0;
+}
+
+ul li ul.dropdown-content li a {
+  padding: 10px 25px; /* Adjust padding for dropdown items */
+  color: #333333; /* Adjust text color for dropdown items */
+}
+
+ul li ul.dropdown-content li a .dropdown-logo {
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  margin-left: 60px; /* Space between the image and the text */
+}
+
+ul li:hover ul.dropdown-content {
+  display: block;
+}
+
+.divvua {
+  display: flex;
+  border: 1px solid #3333;
+}
+
+.text {
+  font-size: 12px;
+  padding: 28px 20px 0 30px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/* Button Đăng ký */
+
+.button button {
+  background-color: #eee;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 6em;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+  margin: 11px 0 0 40px;
+}
+
+.button button:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+.button button:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.button button:disabled {
+  cursor: auto;
+  color: grey;
+}
+
+/* Button Đăng nhập */
+.button2 button {
+  background-color: #eee;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  width: 7em;
+  border-radius: 1rem;
+  color: lightcoral;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+  margin: 11px 0 0 10px;
+}
+
+.button2 button:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+.button2 button:hover:not(:disabled) {
+  background: lightcoral;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.button2 button:disabled {
+  cursor: auto;
+  color: grey;
+}
+
+.box {
+  border-bottom: 1px solid gainsboro;
+  padding: 20px 20px 20px 60px;
+}
+
+.box {
+  position: relative;
+}
+
+.boxul {
+  list-style: none;
+  padding: 0;
+}
+
+.lidulich {
+  position: relative;
+  display: inline-block;
+}
+
+.lidulich a {
+  text-decoration: none;
+  padding: 10px 45px;
+  display: block;
+  width: 225px;
+  display: flex;
+}
+
+.megabox {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1;
+  width: 800px;
+  left: 0;
+  top: 100%;
+}
+
+.lidulich:hover .megabox {
+  display: block;
+}
+
+.boxcontent {
+  display: flex;
+}
+
+.boxmain {
+  flex: 1;
+}
+
+.boxtitle2 {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  height: 40px;
+  font-size: 14px;
+}
+
+.boxtitle2,
+#idli {
+  padding: 5px 0 0 5px;
+}
+
+.boxtitle {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.boxtitle p {
+  width: 150px;
+  height: 10px;
+}
+
+.boxmain p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.boxlink {
+  list-style: none;
+  padding: 0;
+}
+
+.boxlink li {
+  margin-bottom: 5px;
+}
+
+.boxlink a {
+  text-decoration: none;
+  color: #333;
+}
+
+.box-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.box-image {
+  width: 100px;
+  text-align: center;
+}
+
+.box-image img {
+  max-width: 120%;
+  height: 70px;
+  border-radius: 8px;
+  /* margin-left: 20; */
+}
+
+.box-image p {
+  margin-top: 5px;
+  font-size: 14px;
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: -27px;
+  left: 10px;
+  color: white;
+}
+
+.thanhhoa {
+  width: 115px;
+}
+
+/* Tat ca */
+.canle {
+  border: 1px solid #333;
+}
+
+.tatca-nav-links {
+  position: relative;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.tatca-nav-links > .Tatca {
+  position: relative;
+  margin-right: 30px;
+}
+
+.tatca-nav-links > .Tatca > a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.boxul {
+  display: flex;
+  gap: 30px;
+}
+
+.tatca-nav-links > .Tatca > a:hover {
+  background-color: #f0f0f0;
+}
+
+.tatca2 {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -30px;
+  width: 1000px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.tatca-nav-links > .Tatca:hover .tatca2 {
+  display: block;
+}
+
+.tatca3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.maintatca {
+  width: 19%;
+}
+
+.maintatca p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.listtatca {
+  list-style: none;
+  padding: 20px;
+  border-left: 1px solid black;
+}
+
+.listtatca .TourTN {
+  margin-bottom: 8px;
+}
+
+.listtatca .TourTN .litour {
+  display: block;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.listtatca .TourTN .litour:hover {
+  background-color: #f0f0f0;
+  color: #ff4500;
+}
+
+.TraiNghiem .Tourtrainghiem {
+  padding: 10px;
+  padding-left: 30px;
+}
+
+#showcase {
+  /*/ Last image first, add 100vw for each additional image. For infinite, make first picture the last /*/
+  background: url("img/picture1.webp") 100vw 0 no-repeat,
+    url("img/picture6.webp") 200vw 0 no-repeat,
+    url("img/picture1.webp") 100vw 0 no-repeat,
+    url("img/picture6.webp") 0 0 no-repeat;
+  /*/ For every image, one cover /*/
+  background-size: cover, cover, cover, cover;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  animation: slide-right 8s forwards 1s infinite;
+}
+/*/ For four pictures, make keyframes at 0%, 25%, 75%, 100%, for 6 pictures make 0%, 20%, 40%, 60%, 80%, 100% etc./*/
+@keyframes slide-right {
+  0% {
+    /*/ Add one 100vw 0 for each picture at every stage. It's always like a reverse stairway downwards /*/
+    /* 3 100vw's*/
+    background-position: 100vw 0, 100vw 0, 100vw 0, 0 0;
+  }
+  33% {
+    /*2 100vw's*/
+    background-position: 100vw 0, 100vw 0, 0 0, 0 0;
+  }
+  66% {
+    /* 1 100vw'*/
+    background-position: 100vw 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    /* The end - none left :)*/
+    background-position: 0 0, 0 0, 0 0;
+  }
+}
+
+#showcase h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+  padding-left: 30px;
+  margin-bottom: 2px;
+  min-width: 700px;
+  margin-top: -150px;
+}
+
+#showcase h2 {
+  font-size: 20px;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.searchhh {
+  display: inline-block;
+  position: relative;
+}
+
+.searchhh input[type="text"] {
+  width: 560px;
+  height: 55px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 58px;
+  margin-left: 30px;
+}
+
+.searchhh .bnt[type="submit"] {
+  background-color: orangered;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 459px;
+  transition: 0.9s ease;
+  margin-top: 65px;
+  width: 120px;
+  height: 40px;
+}
+
+.searchhh .bnt[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: blue;
+}
+
+.headered {
+  padding: 72px 0 42px;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 80px;
+}
+
+.headered-title {
+  font-size: 28px;
+  color: black;
+  font-weight: 600;
+  line-height: 36px;
+}
+.headered-img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  max-height: 300px;
+  border-radius: 30px;
+  margin-left: 60px;
+}
+
+.picturehder {
+  display: flex;
+  padding-left: 50px;
+}
+
+.icon-1-a {
+  margin-left: 80px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}
+
+.icon-1-a p {
+  padding-top: 20px;
+  width: 300px;
+}
+
+.icon-1-b {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon-1 {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+  margin-bottom: 150px;
+}
+
+.leader1 {
+  border: 1px solid black;
+  width: 280px;
+  height: 400px;
+  margin-left: 85px;
+  border-radius: 10px;
+}
+
+.ldimg .ldzoo {
+  width: 280px;
+  height: 200px;
+  margin-left: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.thongtin {
+  padding: 5px 10px 0 15px;
+  position: relative;
+}
+
+.chonloc {
+  position: absolute;
+  top: -190px;
+  left: 20px;
+  color: white;
+  background-color: orangered;
+  font-size: 12px;
+}
+
+.sthu1 {
+  font-size: 14px;
+  color: gray;
+  margin: 0px 0px 4px;
+}
+
+.veflim {
+  font-size: 16px;
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+
+.gia {
+  display: flex;
+  gap: 10px;
+}
+
+.gia p {
+  font-size: 12px;
+  color: gray;
+  background-color: #e6e0e0;
+  height: 15px;
+  margin: 0px 0px 4px;
+}
+
+.Danggia {
+  margin: 0px 0px 60px 0px;
+  font-size: 15px;
+  color: #757575;
+}
+
+.Danggia2 {
+  margin: 0px 0px 45px 0px;
+  font-size: 15px;
+  color: #757575;
+}
+
+.Danggia3 {
+  margin: 0px 0px 28px 0px;
+  font-size: 15px;
+  color: #757575;
+}
+
+.Danggia5 {
+  margin: 0px 0px 45px 0px;
+  font-size: 15px;
+  color: #757575;
+}
+
+.Danggia7 {
+  margin: 0px 0px 45px 0px;
+  font-size: 15px;
+  color: #757575;
+}
+
+.star {
+  color: #f09b0a;
+}
+
+.giatien1 {
+  display: flex;
+  gap: 10px;
+}
+
+.giatien2 {
+  color: #212121;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 4px 0 0;
+}
+
+.giamgia {
+  color: #a8a8a8;
+  text-decoration: line-through;
+}
+
+.chitiet {
+  border: 1px solid red;
+  font-size: 12px;
+  width: 160px;
+  color: red;
+  padding: 0 4px;
+}
+
+.khungflex {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 420px 380px;
+  grid-gap: 30px;
+  margin-left: 80px;
+  margin-bottom: 90px;
+}

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="divLon">
+        <div class="divvua">
+          <div class="logo">
+            <img src="./img/Klook-Logo.png" alt="Klook Logo" />
+            <div class="search">
+              <form class="form">
+                <button type="submit" aria-label="Search">
+                  <svg
+                    width="17"
+                    height="16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-labelledby="search"
+                  >
+                    <title id="search">Search</title>
+                    <path
+                      d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                      stroke="currentColor"
+                      stroke-width="1.333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </button>
+                <input
+                  class="input"
+                  placeholder="Tìm kiếm điểm đến hoặc hoạt động"
+                  required
+                  type="text"
+                  aria-label="Search input"
+                />
+                <button class="reset" type="reset" aria-label="Reset">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    ></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="dropdown-menu">
+            <ul>
+              <li class="dropdown">
+                <a href="#" aria-haspopup="true" aria-expanded="false">
+                  <img src="./img/logotraidat.png" alt="Logo" class="logo" />
+                  Country
+                </a>
+                <ul class="dropdown-content" aria-label="Country selection">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./img/VietNam.jpg"
+                        alt="Vietnam"
+                        class="dropdown-logo"
+                      />
+                      Vietnam</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./img/Canada.jpg"
+                        alt="Canada"
+                        class="dropdown-logo"
+                      />
+                      Canada</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./img/Brazil.jpg"
+                        alt="Brazil"
+                        class="dropdown-logo"
+                      />
+                      Brazil</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./img/Argentina.jpeg"
+                        alt="Argentina"
+                        class="dropdown-logo"
+                      />
+                      Argentina</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./img/AnhUK.png"
+                        alt="England"
+                        class="dropdown-logo"
+                      />
+                      England</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- chamsoc -->
+          <div class="chamsoc">
+            <p class="text"><a href="#">Đi đến ứng dụng</a></p>
+          </div>
+          <div class="chamsoc">
+            <p class="text"><a href="#">Giúp đỡ</a></p>
+          </div>
+          <div class="chamsoc">
+            <p class="text"><a href="#">Đã xem gần đây</a></p>
+          </div>
+          <div class="button">
+            <button type="button">Đăng ký</button>
+          </div>
+          <div class="button2">
+            <button type="button">Đăng Nhập</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <ul class="boxul">
+          <li class="lidulich">
+            <a href="#">Bạn muốn đi đâu?</a>
+            <div class="megabox">
+              <div class="boxcontent">
+                <div class="boxmain">
+                  <div class="boxtitle"><p>Điểm đến hàng đầu</p></div>
+                  <ul class="boxlink">
+                    <div class="boxtitle2">
+                      <li class="dongA"><a href="#" id="idli">Đông Á</a></li>
+                    </div>
+                    <div class="boxtitle2">
+                      <li class="cacnuoc">
+                        <a href="#" id="idli">Đông Nam Á</a>
+                      </li>
+                    </div>
+                    <div class="boxtitle2">
+                      <li class="cacnuoc">
+                        <a href="#" id="idli">Nam Á / Trung Đông</a>
+                      </li>
+                    </div>
+                    <div class="boxtitle2">
+                      <li class="cacnuoc">
+                        <a href="#" id="idli">Châu Đại Dương / Châu Phi</a>
+                      </li>
+                    </div>
+                    <div class="boxtitle2">
+                      <li class="cacnuoc"><a href="#" id="idli">Châu Âu</a></li>
+                    </div>
+                    <div class="boxtitle2">
+                      <li class="cacnuoc"><a href="#" id="idli">Bắc Mỹ</a></li>
+                    </div>
+                  </ul>
+                </div>
+                <div class="box-images">
+                  <div class="box-image">
+                    <img src="./img/DragonDaNang.jpg" alt="Đà Nẵng" />
+                    <p class="name">Đà Nẵng</p>
+                  </div>
+                  <div class="box-image">
+                    <img src="./img/HCM-City.jpg" alt="Hồ Chí Minh" />
+                    <p class="name">TP.Hồ Chí Minh</p>
+                  </div>
+                  <div class="box-image">
+                    <img src="./img/NhaTrang.jpg" alt="Nha Trang" />
+                    <p class="name">Nha Trang</p>
+                  </div>
+                  <div class="box-image">
+                    <img src="./img/Singapore.jpg" alt="Singapore" />
+                    <p class="name">Singapore</p>
+                  </div>
+                  <div class="box-image">
+                    <img src="./img/HaNoi.jpg" alt="Hà Nội" />
+                    <p class="name">Hà Nội</p>
+                  </div>
+                  <div class="box-image">
+                    <img src="./img/ThaiLand.jpg" alt="Bangkok" />
+                    <p class="name">Băng Cốc</p>
+                  </div>
+                  <div class="box-image">
+                    <img
+                      class="thanhhoa"
+                      src="./img/ThanhHoa.jpg"
+                      alt="Thanh Hóa"
+                    />
+                    <p class="name">Thanh Hóa</p>
+                  </div>
+                  <div class="box-image">
+                    <img src="./img/HoiAn.jpg" alt="Hội An" />
+                    <p class="name">Hội An</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <ul class="tatca-nav-links">
+            <li class="Tatca">
+              <a href="#" class="tatca">Khám phá các điểm đến</a>
+              <div class="tatca2">
+                <div class="tatca3">
+                  <div class="maintatca">
+                    <p>Tour & Trải Nghiệm</p>
+                    <ul class="listtatca">
+                      <li class="TourTN">
+                        <a href="#" class="litour">Tour ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Các chuyến tham quan ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Du thuyền ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour"
+                          >Massage & suối nước nóng ></a
+                        >
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Hoạt động dưới nước ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour"
+                          >Hoạt động ngoài trời & thể thao ></a
+                        >
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Trải nghiệm văn hóa ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="maintatca">
+                    <p>Vé Tham Quan</p>
+                    <ul class="listtatca">
+                      <li class="TourTN">
+                        <a href="#" class="litour">Công viên giải trí ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Công viên nước ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Bảo tàng ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Công viên & vườn ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Vườn thú & thủy cung ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Cáp treo ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Di tích lịch sử ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Sân chơi ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Trò chơi trong nhà ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Vé tham quan ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="maintatca">
+                    <p>Ở Lại</p>
+                    <ul class="listtatca">
+                      <li class="TourTN">
+                        <a href="#" class="litour">Nhiều khách sạn ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="maintatca">
+                    <p>Chuyển Chở</p>
+                    <ul class="listtatca">
+                      <li class="TourTN">
+                        <a href="#" class="litour">Vé xe lửa ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Vé tàu Nhật Bản ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Vé tàu Châu Âu ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Thẻ và vé tàu điện ngầm ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour"
+                          >Dịch vụ đưa đón sân bay riêng ></a
+                        >
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour"
+                          >Tàu hỏa và xe buýt sân bay ></a
+                        >
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Chuyến bay ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Phà ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Xe buýt ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Cho thuê xe ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Thuê xe ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="maintatca">
+                    <p>Còn nhiều điều để khám phá</p>
+                    <ul class="listtatca">
+                      <li class="TourTN">
+                        <a href="#" class="litour">Thực phẩm & ăn uống ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Mua sắm ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">WiFi và thẻ SIM ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Dịch vụ du lịch ></a>
+                      </li>
+                      <li class="TourTN">
+                        <a href="#" class="litour">Bảo hiểm ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <div class="TraiNghiem">
+              <p class="Tourtrainghiem">Trải Nghiệm</p>
+            </div>
+            <div class="TraiNghiem">
+              <p class="Tourtrainghiem">Vé Tham Quan</p>
+            </div>
+            <div class="TraiNghiem">
+              <p class="Tourtrainghiem">Khách sạn</p>
+            </div>
+            <div class="TraiNghiem">
+              <p class="Tourtrainghiem">Di chuyển</p>
+            </div>
+            <div class="TraiNghiem">
+              <p class="Tourtrainghiem">Thuê xe tự lái</p>
+            </div>
+            <div class="TraiNghiem">
+              <p class="Tourtrainghiem">...</p>
+            </div>
+            <div class="TraiNghiem">
+              <p class="Tourtrainghiem">Phiếu tặng quà</p>
+            </div>
+          </ul>
+        </ul>
+      </div>
+    </header>
+    <div class="pture">
+      <header id="showcase">
+        <h1>THẾ GIỚI TRỌN NIỀM VUI</h1>
+        <br />
+        <h2>
+          Khám phá niềm vui của bạn mọi lúc, mọi nơi - từ chuyến du lịch ngẫu
+          hứng tới những cuộc phiêu lưu khắp thế giới
+        </h2>
+        <div class="searchhh">
+          <input placeholder="Search..." type="text" />
+          <button type="submit" class="bnt">Khám Phá</button>
+        </div>
+      </header>
+    </div>
+    <div class="common-container-desktop">
+      <div class="headered">
+        <h2 class="headered-title">Ưu đãi cho bạn</h2>
+      </div>
+      <div class="picturehder">
+        <div>
+          <img class="headered-img" src="./img/picheader.webp" alt="Error" />
+        </div>
+        <div>
+          <img class="headered-img" src="./img/picheader2.webp" alt="Error" />
+        </div>
+        <div>
+          <img class="headered-img" src="./img/picheader3.webp" alt="Error" />
+        </div>
+      </div>
+    </div>
+
+    <div class="KlookWhy">
+      <div class="headered">
+        <h2 class="headered-title">Vì sao bạn nên chọn Klook</h2>
+      </div>
+      <div class="icon-1">
+        <div class="icon-1-a">
+          <img src="./img/icon1.webp" alt="Error" />
+          <p class="icon-1-b">Vô vàn lựa chọn</p>
+          <p>
+            Tìm kiếm niềm vui với gần nửa triệu điểm tham quan, phòng khách sạn
+            và nhiều trải nghiệm thú vị
+          </p>
+        </div>
+        <div class="icon-1-a">
+          <img src="./img/icon2.webp" alt="Error" />
+          <p class="icon-1-b">Chơi vui, giá tốt</p>
+          <p>
+            Trải nghiệm chất lượng với giá tốt. Tích luỹ Klook credit để được
+            thêm ưu đãi
+          </p>
+        </div>
+        <div class="icon-1-a">
+          <img src="./img/icon3.webp" alt="Error" />
+          <p class="icon-1-b">Dễ dàng và tiện lợi</p>
+          <p>
+            Đặt vé xác nhận ngay, miễn xếp hàng, miễn phí hủy, tiện lợi cho bạn
+            tha hồ khám phá
+          </p>
+        </div>
+        <div class="icon-1-a">
+          <img src="./img/icon4.webp" alt="Error" />
+          <p class="icon-1-b">Đáng tin cậy</p>
+          <p>
+            Tham khảo đánh giá chân thực. Dịch vụ hỗ trợ tận tình, đồng hành
+            cùng bạn mọi lúc, mọi nơi
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="leader">
+      <div class="headered">
+        <h2 class="headered-title">Các hoạt động nổi bật</h2>
+      </div>
+      <div class="khungflex">
+        <div class="leader1">
+          <div class="ldimg">
+            <img class="ldzoo" src="./img/zoo1.webp" alt="" />
+          </div>
+          <div class="thongtin">
+            <div>
+              <p class="sthu1">Sở thú & Thủy cung • Bangkok</p>
+              <p class="veflim">Vé Safari World Bangkok</p>
+              <div class="gia">
+                <p>Bán chạy</p>
+                <p>Hoàn tiền dễ dàng</p>
+              </div>
+              <div class="Danggia">
+                <span class="star">★ 4.6 </span
+                ><span class="SoLieu">(17,657) • 500k + Đã được đặt</span>
+              </div>
+              <div class="giatien">
+                <div class="giatien1">
+                  <p class="giatien2">Từ ₫ 524,096</p>
+                  <p class="giamgia">₫ 698,795</p>
+                </div>
+              </div>
+              <div class="chitiet">Chính sách đảm bảo giá tốt</div>
+            </div>
+          </div>
+        </div>
+        <div class="leader1">
+          <div class="ldimg">
+            <img class="ldzoo" src="./img/zoo2.webp" alt="" />
+          </div>
+          <div class="thongtin">
+            <div>
+              <p class="sthu1">Tour • Bangkok</p>
+              <p class="veflim">
+                Tour Công viên Bangkok Safari World với Xe Đưa Đón...
+              </p>
+              <div class="gia">
+                <p>Bán chạy</p>
+                <p>Hoàn tiền dễ dàng</p>
+              </div>
+              <div class="Danggia2">
+                <span class="star">★ 4.8 </span
+                ><span class="SoLieu">(4,621) • 100k + Đã được đặt</span>
+              </div>
+              <div class="giatien">
+                <div class="giatien1">
+                  <p class="giatien2">Từ ₫ 1,072,440</p>
+                  <p class="giamgia">₫ 1,308,14</p>
+                </div>
+              </div>
+              <div class="chitiet">Chính sách đảm bảo giá tốt</div>
+            </div>
+          </div>
+        </div>
+        <div class="leader1">
+          <div class="ldimg">
+            <img class="ldzoo" src="./img/zoo3.webp" alt="" />
+          </div>
+          <div class="thongtin">
+            <div class="chonloc">Klook chọn lọc</div>
+            <div>
+              <p class="sthu1">Tour • Pattaya</p>
+              <p class="veflim">
+                Tour Riêng Khám Phá Pattaya từ Bangkok hoặc Pattaya
+              </p>
+              <div class="gia">
+                <p>Tour riêng</p>
+                <p>Hoàn tiền dễ dàng</p>
+              </div>
+              <div class="Danggia">
+                <span class="star">★ 4.8 </span
+                ><span class="SoLieu">(185) • 3k + Đã được đặt</span>
+              </div>
+              <div class="giatien">
+                <div class="giatien1">
+                  <p class="giatien2">Từ ₫ 1,921,756</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="leader1">
+          <div class="ldimg">
+            <img class="ldzoo" src="./img/icon5.webp" alt="" />
+          </div>
+          <div class="thongtin">
+            <div>
+              <p class="sthu1">Thuê xe có tài xế riêng • Bangkok</p>
+              <p class="veflim">
+                Thuê Xe Có Tài Xế Riêng giữa Bangkok và Pattaya, Ayutthaya,...
+              </p>
+              <div class="gia">
+                <p>Bán chạy</p>
+                <p>Hoàn tiền dễ dàng</p>
+              </div>
+              <div class="Danggia3">
+                <span class="star">★ 4.8 </span
+                ><span class="SoLieu">(4,621) • 100k + Đã được đặt</span>
+              </div>
+              <div class="giatien">
+                <div class="giatien1">
+                  <p class="giatien2">Từ ₫ 1,072,440</p>
+                  <p class="giamgia">₫ 1,308,14</p>
+                </div>
+              </div>
+              <div class="chitiet">Chính sách đảm bảo giá tốt</div>
+            </div>
+          </div>
+        </div>
+        <div class="leader1">
+          <div class="ldimg">
+            <img class="ldzoo" src="./img/zoo4.webp" alt="" />
+          </div>
+          <div class="thongtin">
+            <div class="chonloc">Ưu đãi giữa năm</div>
+            <div>
+              <p class="sthu1">Sở thú & Thủy cung • Bangkok</p>
+              <p class="veflim">Vé Thủy Cung SEA LIFE Bangkok Ocean World</p>
+              <div class="gia">
+                <p>TBán chạy</p>
+                <p>Xác nhận tức thời</p>
+              </div>
+              <div class="Danggia5">
+                <span class="star">★ 4.6 </span
+                ><span class="SoLieu">(16,425) • 500k + Đã được đặt</span>
+              </div>
+              <div class="giatien">
+                <div class="giatien1">
+                  <p class="giatien2">Từ ₫ 685,518</p>
+                  <p class="giamgia">₫ 761,686</p>
+                </div>
+              </div>
+              <div class="chitiet">Chính sách đảm bảo giá tốt</div>
+            </div>
+          </div>
+        </div>
+        <div class="leader1">
+          <div class="ldimg">
+            <img class="ldzoo" src="./img/zoo5.webp" alt="" />
+          </div>
+          <div class="thongtin">
+            <div class="chonloc">Klook chọn lọc</div>
+            <div>
+              <p class="sthu1">Du thuyến • Bangkok</p>
+              <p class="veflim">
+                Trải nghiệm Du Thuyền Chao Phraya Princess ở Bangkok
+              </p>
+              <div class="gia">
+                <p>Bán chạy</p>
+                <p>Hoàn tiền dễ dàng</p>
+              </div>
+              <div class="Danggia7">
+                <span class="star">★ 4.6 </span
+                ><span class="SoLieu">(13,650) • 300k + Đã được đặt</span>
+              </div>
+              <div class="giatien">
+                <div class="giatien1">
+                  <p class="giatien2">Từ ₫ 608,926</p>
+                </div>
+              </div>
+            </div>
+            <div class="chitiet">Chính sách đảm bảo giá tốt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
